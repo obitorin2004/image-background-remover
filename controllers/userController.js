@@ -44,7 +44,7 @@ const register = async (req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ message: "Internal Server Error" });
+        res.status(500).json({success:false, message: "Internal Server Error" });
     }
 }
 
@@ -81,7 +81,7 @@ const login = async (req, res) => {
         
     } catch (error) {
         console.log(error);
-        res.status(500).json({ message: "Internal Server Error" });
+        res.status(500).json({ success:false,message: "Internal Server Error" });
     }
 
 }
