@@ -18,8 +18,7 @@ app.use(express.json())
 app.use('/api/users', userRouter)
 app.use('/api/images', imageRouter)
 
-app.get('/test', (req, res) => {
-    console.log('Request received at /test');
+app.get('/api/test', (req, res) => {
     res.send('Server is working!');
 });
 
