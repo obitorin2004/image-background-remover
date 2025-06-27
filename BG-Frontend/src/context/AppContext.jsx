@@ -12,8 +12,8 @@ const AppContextProvider = ({ children }) => {
   const [resultImage, setResultImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-const backendUrl = process.env.REACT_APP_API_URL;
-// const backendUrl = "https://image-background-remover-2.onrender.com";
+// const backendUrl = process.env.REACT_APP_API_URL;
+const backendUrl = "https://image-background-remover-2.onrender.com";
 
 
 
@@ -77,7 +77,7 @@ const backendUrl = process.env.REACT_APP_API_URL;
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
-console.log("Backend URL:", backendUrl);
+// console.log("Backend URL:", backendUrl);
 
 
 export default AppContextProvider;
