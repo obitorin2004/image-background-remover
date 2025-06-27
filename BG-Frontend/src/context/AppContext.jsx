@@ -76,5 +76,7 @@ const backendUrl = process.env.REACT_APP_API_URL;
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
+console.log("Backend URL:", backendUrl);
+
 
 export default AppContextProvider;
