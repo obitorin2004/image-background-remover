@@ -12,7 +12,8 @@ const AppContextProvider = ({ children }) => {
   const [resultImage, setResultImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-const backendUrl = process.env.REACT_APP_API_URL;
+const backendUrl = import.meta.env.VITE_API_URL;
+
 
 
 
