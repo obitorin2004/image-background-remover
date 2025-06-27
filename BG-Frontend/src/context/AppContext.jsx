@@ -15,6 +15,7 @@ const AppContextProvider = ({ children }) => {
 const backendUrl = process.env.REACT_APP_API_URL;
 
 
+
   const removeBg = async (image) => {
     try {
       setIsLoading(true);
